@@ -59,7 +59,7 @@ class KCad(wx.Frame):
         # Current trace, if one is being drawn
         if self.start_position and not self.stop_position:
             # Check which part of the line to start drawing first
-            # TODO: Need 45 degree angles too
+            # TODO: Need 45 degree angles too. See how KiCAD does it.
             vert_distance = abs(self.start_position[1] - self.mouse_position[1])
             horiz_distance = abs(self.start_position[0] - self.mouse_position[0])
             if vert_distance > horiz_distance:
